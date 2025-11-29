@@ -2,7 +2,7 @@ import React from 'react'
 import './Modal.css'
 
 function CEO() {
-  window.open('/Letter of Recommendation Internship for Andrew Johnson Next Play Nation.pdf', '_blank');
+  window.open('/letter_of_recommendation_next_play_nation.pdf', '_blank');
 }
 
 const Modal = ({ closeModal }) => {

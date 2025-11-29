@@ -3,9 +3,15 @@ import './Internship.css'
 import Next from '../Images/next_play_nation.png'
 import Modal from '../Modal/Modal'
 
+
+
+
 function CEO() {
-  window.open('/Letter of Recommendation Internship for Andrew Johnson Next Play Nation.pdf', '_blank');
+  window.open('/letter_of_recommendation_next_play_nation.pdf', '_blank');
 }
+
+
+
 
 const Internship = () => {
 
