@@ -1,0 +1,94 @@
+
+
+
+
+.experience-container {
+     width:100%;
+    overflow: hidden;
+    margin:0;
+    background: white;
+}
+
+
+
+.experience-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+        color:gold;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+.experience-header-two {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+    font-weight: bold;
+}
+
+
+
+
+.project-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 10px;
+    gap: 24px;
+}
+
+
+.project-section img:not(.github-icon) {
+    width: 310px;
+    height: 310px;
+    object-fit: contain;
+    border-radius: 10%;
+    outline: 3px solid grey;
+}
+
+.project-section img:hover {
+    cursor: pointer;
+}
+
+
+.project-section {
+    text-align: center;
+}
+
+.project-section h3 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.project-section p {
+    color:grey;
+        font-weight: bold;
+    font-size: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+.github-icon {
+    width:110px;
+    height: 110px;
+    object-fit: contain;
+}

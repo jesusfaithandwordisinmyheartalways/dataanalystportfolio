@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+ overflow-x:hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+/* Ensures the H3 is visible below the navbar on scroll */
+section {
+  scroll-margin-top: 120px;  /* adjust if navbar is taller/shorter */
+}

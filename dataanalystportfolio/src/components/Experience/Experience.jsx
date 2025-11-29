@@ -1,0 +1,78 @@
+
+
+
+
+import React from 'react'
+import './Experience.css'
+import SQLPythonDataAnalystProject from '../Images/SQLPythonDataAnalystProject.png'
+import github from '../Images/github-icon.png'
+import Healthcare_Dashboard from '../Images/data-analytics-for-healthcare.png'
+
+
+
+
+function SQLProject() {
+  window.location.href = 'https://github.com/jesusfaithandwordisinmyheartalways/SQLpythondataanalyst'
+}
+
+
+
+function HealthCare_Project() {
+  window.location.href = 'https://github.com/jesusfaithandwordisinmyheartalways/healthcaredataanalytics'
+}
+
+
+
+
+
+const Experience = () => {
+  return (
+   <>
+    <div className='experience-container'></div>
+
+        <div className='experience-header'>
+          <div>
+            {/* Added the class "rainbow-shadow" */}
+            <h3>Projects</h3>
+          </div>
+        </div>
+
+        <div className='experience-header-two'>
+            <p>These are some the projects that I have implemented. Many more projects are yet to come.</p>
+        </div>
+
+
+
+        <div className='project-section'>
+            <div><img src={SQLPythonDataAnalystProject} alt=''></img></div>
+            <div><h3>SQL & Python Data Analysis  </h3></div>
+            <div><p>SQL, Python , Pandas library, Tableau , Real Analytics Workflow </p></div>
+            <div> <img onClick={SQLProject} className="github-icon" src={github} alt=''></img></div>
+
+
+             <div><img src={Healthcare_Dashboard} alt=''></img></div>
+            <div><h3>Healthcare Data Analytics: Billing, Visits & Outcomes   </h3></div>
+            <div><p>SQL, Python , 	NumPy & openpyxl  library, Tableau , Jupyter Notebook, PostgreSQL + pgAdmin , Excel  </p></div>
+            <div> <img onClick={HealthCare_Project} className="github-icon" src={github} alt=''></img></div>
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+   </>
+  )
+}
+
+export default Experience

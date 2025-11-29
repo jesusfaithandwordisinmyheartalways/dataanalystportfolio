@@ -1,0 +1,128 @@
+.internship-container {
+    width: 100%;
+    overflow: hidden;
+    height: 110vh;
+    margin: 0;
+}
+
+.internship-header {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 139, 63);
+    font-weight: bold;
+}
+
+.internship-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: auto;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.internship-image-wrapper {
+    position: relative;
+    width: 310px;
+    height: 310px;
+    cursor: pointer;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.internship-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease-in-out;
+}
+
+.hover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 139, 63, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.plus-icon {
+    font-size: 70px;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.internship-image-wrapper:hover img {
+    transform: scale(1.05);
+}
+
+.internship-image-wrapper:hover .hover-overlay {
+    opacity: 1;
+}
+
+.internship-image-wrapper:hover .plus-icon {
+    opacity: 1;
+}
+
+.internship-content h3 {
+    font-size: 1.2rem;
+    color: black;
+}
+
+.internship-content h4 {
+    font-size: 1.2rem;
+    color: grey;
+}
+
+.internship-content p {
+    font-size: 1rem;
+    color: grey;
+}
+
+/* NEW CEO BUTTON */
+.ceo-btn {
+    margin-top: 10px;
+    padding: 10px 16px;
+    background: #008b3f;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.ceo-btn:hover {
+    background: #00a94f;
+    transform: scale(1.03);
+}
+
+/* MOBILE (420px) */
+@media screen and (max-width: 420px) {
+    .internship-container {
+        height: auto;
+    }
+
+    .internship-image-wrapper {
+        width: 250px;
+        height: 250px;
+    }
+
+    .ceo-btn {
+        width: 90%;
+        padding: 12px;
+        font-size: 1rem;
+    }
+}
