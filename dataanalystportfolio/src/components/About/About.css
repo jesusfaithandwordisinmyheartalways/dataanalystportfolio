@@ -78,21 +78,24 @@
 
 
 
-
-
 @media screen and (max-width: 420px) {
-    .about-wrapper-two {
-        flex-direction: column;
+    .about-container {
+        height: auto;
+        padding-bottom: 1em;
     }
 
-    .about-wrapper-two img {
-        width: 90%;
-        height: auto;
-        margin-bottom: 1em;
+    .about-wrapper-two {
+        flex-direction: column;
+        text-align: center;
+        gap: 1em;
     }
 
     .para-about {
-        width: 90%;
+        width: 95%;
         font-size: 0.9rem;
+    }
+
+    .domain-text p {
+        font-size: 0.8rem;
     }
 }

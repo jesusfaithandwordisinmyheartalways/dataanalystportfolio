@@ -92,3 +92,29 @@
     height: 110px;
     object-fit: contain;
 }
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 420px) {
+
+    .experience-header-two  {
+        font-size: 0.7rem;
+        width: 70%;
+        text-align: center;
+    }
+    .project-section img:not(.github-icon) {
+        width: 230px;
+        height: 230px;
+    }
+
+    .github-icon {
+        width: 80px;
+        height: 80px;
+    }
+}

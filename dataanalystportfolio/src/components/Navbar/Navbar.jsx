@@ -2,12 +2,11 @@ import React, { useEffect, useState } from 'react'
 import './Navbar.css'
 
 function ResumeDownload() {
-  window.open('/resume.pdf', '_blank'); // opens in new tab
+  window.open('/resume.pdf', '_blank');
 }
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 31);
@@ -15,13 +14,9 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const closeMenu = () => setMenuOpen(false);
-
-  // smooth scrolling
   const smoothScroll = (e, target) => {
     e.preventDefault();
     document.querySelector(target).scrollIntoView({ behavior: 'smooth' });
-    closeMenu();
   };
 
   return (
@@ -30,32 +25,21 @@ const Navbar = () => {
         <div className='nav-wrapper'>
           <h3 className={scrolled ? "scrolled-title" : ""}>Andrew Johnson</h3>
 
-          <div
-            className={`menu-button ${menuOpen ? "open" : ""}`}
-            onClick={() => setMenuOpen(!menuOpen)}
-          >
+          {/* HAMBURGER REMOVED FOR MOBILE */}
+          <div className="menu-button hide-mobile">
             <span className="bar1"></span>
             <span className="bar2"></span>
             <span className="bar3"></span>
           </div>
 
-          <div className={`nav-links ${menuOpen ? "open" : ""}`}>
+          <div className="nav-links">
             <a href="#about" onClick={(e)=>smoothScroll(e,'#about')}>About</a>
             <a href="#skills" onClick={(e)=>smoothScroll(e,'#skills')}>Skills</a>
-
-            {/* NEW Internship smooth scroll link */}
-            <a href="#internship" onClick={(e)=>smoothScroll(e,'#internship')}>
-              Experience
-            </a>
-
+            <a href="#internship" onClick={(e)=>smoothScroll(e,'#internship')}>Experience</a>
             <a href="#projects" onClick={(e)=>smoothScroll(e,'#projects')}>Projects</a>
             <a href="#education" onClick={(e)=>smoothScroll(e,'#education')}>Education</a>
             <a href="#contact" onClick={(e)=>smoothScroll(e,'#contact')}>Contact</a>
-
-            {/* NEW Resume link */}
-            <a onClick={ResumeDownload} style={{ cursor: "pointer" }}>
-              Résumé
-            </a>
+            <a onClick={ResumeDownload} style={{ cursor: "pointer" }}>Résumé</a>
           </div>
 
         </div>
@@ -64,4 +48,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default Navbar;

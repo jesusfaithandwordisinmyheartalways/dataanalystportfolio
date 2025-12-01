@@ -66,3 +66,30 @@
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
 }
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 420px) {
+    .contact-container {
+        height: auto;
+        padding-bottom: 2em;
+    }
+
+    .contact-links {
+        flex-direction: column;
+        gap: 1.5em;
+    }
+
+    .contact-footer {
+        font-size: 1.3rem;
+        text-align: center;
+        padding: 0 1em;
+    }
+}

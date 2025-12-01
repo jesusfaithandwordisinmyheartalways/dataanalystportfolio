@@ -40,7 +40,7 @@
     transition: color 0.3s ease;
 }
 
-/* Scroll behavior */
+/* Scroll effect */
 .nav-scrolled {
     padding: 0.1em;
     background: linear-gradient(
@@ -55,97 +55,30 @@
     );
 }
 
-.nav-container:not(.nav-scrolled) {
-    background: black;
-    padding: 1em;
-}
-
-/* 🔥 Make h3 BLACK + BOLD on scroll */
 .scrolled-title {
     color: black !important;
     font-weight: 900 !important;
 }
 
-/* Desktop nav-links */
+/* Desktop */
 .nav-links {
     display: flex;
     gap: 1em;
-    transition: all 0.3s ease;
 }
 
-/* Hamburger hidden by default */
 .menu-button {
-    display: none;
+    display: none; /* always hidden now */
 }
 
 /* --------------------------- */
-/* MOBILE ONLY */
+/* MOBILE VERSION */
+
 @media screen and (max-width: 420px) {
-
-    /* Hide desktop links */
     .nav-links {
-        display: none;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background: gold;
-        border-top: 2px solid white;
-        border-bottom: 2px solid white;
-        flex-direction: column;
-        padding: 1em 0 1em 1em;
-        max-height: 70vh;
-        overflow-y: auto;
-        transition: transform 0.35s ease;
-        transform: translateY(-120%);
-        z-index: 998;
+        display: none !important; /* HIDE ALL a LINKS */
     }
 
-    /* Show menu when open */
-    .nav-links.open {
-        display: flex;
-        transform: translateY(0);
-    }
-
-    /* Mobile link styling */
-    .nav-links a {
-        color: white;
-        font-size: 20px;
-        margin-bottom: 0.5em;
-        text-align: left;
-        display: block;
-    }
-
-    /* Hamburger button visible */
     .menu-button {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 30px;
-        height: 25px;
-        cursor: pointer;
-        z-index: 1000;
-    }
-
-    .menu-button span {
-        display: block;
-        height: 3px;
-        width: 100%;
-        background-color: white;
-        border-radius: 2px;
-        transition: 0.3s ease;
-    }
-
-    /* Animate hamburger to X when open */
-    .menu-button.open .bar1 {
-        transform: rotate(-45deg) translate(-5px, 6px);
-    }
-
-    .menu-button.open .bar2 {
-        opacity: 0;
-    }
-
-    .menu-button.open .bar3 {
-        transform: rotate(45deg) translate(-5px, -6px);
+        display: none !important; /* Make sure hamburger is gone */
     }
 }

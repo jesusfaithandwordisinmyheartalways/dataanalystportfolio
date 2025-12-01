@@ -109,20 +109,24 @@
     transform: scale(1.03);
 }
 
+
+
+
+
+
 /* MOBILE (420px) */
 @media screen and (max-width: 420px) {
     .internship-container {
         height: auto;
+        padding-bottom: 1.5em;
     }
 
     .internship-image-wrapper {
-        width: 250px;
-        height: 250px;
+        width: 230px;
+        height: 230px;
     }
 
-    .ceo-btn {
-        width: 90%;
-        padding: 12px;
+    .internship-content h3 {
         font-size: 1rem;
     }
 }
