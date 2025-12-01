@@ -10,7 +10,8 @@ import EXCEL from '../Images/microsoftexcel.png'
 import NumPy from '../Images/NumPy.png'
 import Jupyter_Logo from '../Images/Jupyter_logo.png'
 import Openpyxl_Logo from '../Images/openpyxl.png'
-
+import R from '../Images/r_.png'
+import Power from '../Images/Power-BI.png'
 
 
 
@@ -40,6 +41,9 @@ const Skill = () => {
                  <div><img src={SQL} alt=''></img><p>SQL</p></div>
                   <div><img src={PostGresSQL} alt=''></img><p>Postgres SQL</p></div>
                    <div><img src={Tableau} alt=''></img><p>Tableau</p></div>
+                     <div><img src={Power} alt=''></img><p>Power BI</p></div>
+                      <div><img src={R} alt=''></img><p>R</p></div>
+
                    <div><img src={Git} alt=''></img><p>Git version control</p></div>
                     <div><img src={EXCEL} alt=''></img><p>Excel Data</p></div>
                      <div><img src={NumPy} alt=''></img><p>Numpy Library</p></div>

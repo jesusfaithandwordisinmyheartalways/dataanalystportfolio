@@ -75,3 +75,24 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
+
+
+
+
+
+@media screen and (max-width: 420px) {
+    .about-wrapper-two {
+        flex-direction: column;
+    }
+
+    .about-wrapper-two img {
+        width: 90%;
+        height: auto;
+        margin-bottom: 1em;
+    }
+
+    .para-about {
+        width: 90%;
+        font-size: 0.9rem;
+    }
+}
