@@ -5,6 +5,12 @@ function ResumeDownload() {
   window.open('/resume.pdf', '_blank');
 }
 
+
+function CoverLetterDownload() {
+  window.open('/coverletter.pdf', '_blank');
+}
+
+
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
 
@@ -40,6 +46,8 @@ const Navbar = () => {
             <a href="#education" onClick={(e)=>smoothScroll(e,'#education')}>Education</a>
             <a href="#contact" onClick={(e)=>smoothScroll(e,'#contact')}>Contact</a>
             <a onClick={ResumeDownload} style={{ cursor: "pointer" }}>Résumé</a>
+            <a onClick={CoverLetterDownload} style={{ cursor: "pointer" }}>Cover Letter</a>
+
           </div>
 
         </div>
