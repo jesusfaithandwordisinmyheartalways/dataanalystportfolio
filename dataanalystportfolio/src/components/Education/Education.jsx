@@ -18,7 +18,7 @@ const Education = () => {
 
         <div className='education-item'>
             <div><img src={MGA} alt=''></img></div>
-            <div><p>Bachelor of Science , Information Technology (BSIT)</p></div>
+            <div><p>Bachelor of Science, Information Technology</p></div>
             <div><h3>Middle Georgia State University</h3></div>
         </div>
 

@@ -12,6 +12,7 @@ import Jupyter_Logo from '../Images/Jupyter_logo.png'
 import Openpyxl_Logo from '../Images/openpyxl.png'
 import R from '../Images/r_.png'
 import Power from '../Images/Power-BI.png'
+import machine_learning from '../Images/machine_learning.png'
 
 
 
@@ -43,6 +44,8 @@ const Skill = () => {
                    <div><img src={Tableau} alt=''></img><p>Tableau</p></div>
                      <div><img src={Power} alt=''></img><p>Power BI</p></div>
                       <div><img src={R} alt=''></img><p>R</p></div>
+                      <div><img src={machine_learning} alt=''></img><p>Machine Learning</p></div>
+
 
                    <div><img src={Git} alt=''></img><p>Git version control</p></div>
                     <div><img src={EXCEL} alt=''></img><p>Excel Data</p></div>

@@ -8,6 +8,14 @@ import SQLPythonDataAnalystProject from '../Images/SQLPythonDataAnalystProject.p
 import github from '../Images/github-icon.png'
 import Healthcare_Dashboard from '../Images/data-analytics-for-healthcare.png'
 import W from  '../Images/WAREHOUSEDASHBOARD.png'
+import Government_Operations from '../Images/Government_Operations.png'
+
+
+
+
+function Government_OperationsProject() {
+  window.location.href = 'https://github.com/jesusfaithandwordisinmyheartalways/DataAnalyticsGovernmentAuditErrorDetection'
+}
 
 
 
@@ -50,25 +58,34 @@ const Experience = () => {
 
 
         <div className='project-section'>
-            <div><img src={SQLPythonDataAnalystProject} alt=''></img></div>
-            <div><h3>SQL & Python Data Analysis  </h3></div>
-            <div><p>SQL, Python , Pandas library, Tableau , Real Analytics Workflow </p></div>
-            <div> <img onClick={SQLProject} className="github-icon" src={github} alt=''></img></div>
 
 
-             <div><img src={Healthcare_Dashboard} alt=''></img></div>
+        <div><img src={Government_Operations } onClick={Government_OperationsProject} alt=''></img></div>
+            <div><h3>Large-Scale Audit & Error Detection System for Government Operations  </h3></div>
+            <div><p>Python, SQL, R, Tableau Public </p></div>
+            <div> <img onClick={Government_OperationsProject} className="github-icon" src={github} alt=''></img></div>
+
+         
+
+             <div><img src={Healthcare_Dashboard} onClick={HealthCare_Project} alt=''></img></div>
             <div><h3>Healthcare Data Analytics: Billing, Visits & Outcomes   </h3></div>
             <div><p>SQL, Python , 	NumPy & openpyxl  library, Tableau , Jupyter Notebook, PostgreSQL + pgAdmin , Excel  </p></div>
             <div> <img onClick={HealthCare_Project} className="github-icon" src={github} alt=''></img></div>
 
 
 
-
-
-             <div><img src={W} alt=''></img></div>
+             <div><img src={W} onClick={Data} alt=''></img></div>
             <div><h3>DataWarehouseAnalytics: Sales Data Warehouse & Dashboards </h3></div>
             <div><p>Mini Data Warehouse in PostgreSQL Python , R, Interactive dashboards in Tableau and Power BI, baseline machine learning  </p></div>
             <div> <img onClick={Data} className="github-icon" src={github} alt=''></img></div>
+
+
+
+            <div><img src={SQLPythonDataAnalystProject} onClick={SQLProject} alt=''></img></div>
+            <div><h3>SQL & Python Data Analysis  </h3></div>
+            <div><p>SQL, Python , Pandas library, Tableau , Real Analytics Workflow </p></div>
+            <div> <img onClick={SQLProject} className="github-icon" src={github} alt=''></img></div>
+
 
 
 

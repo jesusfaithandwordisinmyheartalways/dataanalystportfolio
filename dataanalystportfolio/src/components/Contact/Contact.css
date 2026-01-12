@@ -1,7 +1,3 @@
-
-
-
-
 .contact-container {
     width:100%;
     overflow: hidden;
@@ -10,7 +6,6 @@
     background: black;
     height: 70vh
 }
-
 
 .c-wrapper {
     display: flex;
@@ -23,24 +18,42 @@
     font-weight: bold;
 }
 
-
-
 .contact-links {
     display: flex;
     align-items: center;
     justify-content: space-around;
     margin:0 auto;
     max-width: 1500px;
-
 }
 
+/* ========================= */
+/* ICON BASE STYLES */
+/* ========================= */
+.contact-links a {
+    display: inline-flex;
+    padding: 16px;
+    border-radius: 50%;
 
-.contact-links:hover {
+    /* NEW */
+    transition: all 0.3s ease-in-out;
+}
+
+/* ========================= */
+/* HOVER EFFECT (DESKTOP) */
+/* ========================= */
+.contact-links a:hover {
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.7);
+    transform: scale(1.15);
     cursor: pointer;
 }
 
-
-
+/* ========================= */
+/* TOUCH EFFECT (MOBILE) */
+/* ========================= */
+.contact-links a:active {
+    box-shadow: 0 0 28px rgba(0, 200, 0, 0.9);
+    transform: scale(0.95);
+}
 
 .contact-footer {
     display: flex;
@@ -54,8 +67,6 @@
     font-family:"times new roman", times, serif;
 }
 
-
-
 .contact-footer-two {
     display: flex;
     align-items: center;
@@ -67,15 +78,9 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
-
-
-
-
-
-
-
-
-
+/* ========================= */
+/* MOBILE */
+/* ========================= */
 @media screen and (max-width: 420px) {
     .contact-container {
         height: auto;

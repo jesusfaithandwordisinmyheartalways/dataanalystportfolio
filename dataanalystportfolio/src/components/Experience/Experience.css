@@ -1,15 +1,9 @@
-
-
-
-
 .experience-container {
-     width:100%;
+    width:100%;
     overflow: hidden;
     margin:0;
     background: white;
 }
-
-
 
 .experience-header {
     display: flex;
@@ -18,15 +12,9 @@
     margin: 0 auto;
     font-size: 2rem;
     font-family: Arial, Helvetica, sans-serif;
-        color:gold;
+    color:gold;
     font-weight: bold;
 }
-
-
-
-
-
-
 
 .experience-header-two {
     display: flex;
@@ -39,9 +27,6 @@
     font-weight: bold;
 }
 
-
-
-
 .project-section {
     display: flex;
     flex-direction: column;
@@ -50,57 +35,86 @@
     margin: 0 auto;
     max-width: 1000px;
     padding: 10px;
-    gap: 24px;
+    gap: 32px;
+    margin-block-start: 98px;
+    text-align: center;
 }
 
-
+/* ========================= */
+/* IMAGE BASE STYLES */
+/* ========================= */
 .project-section img:not(.github-icon) {
     width: 310px;
     height: 310px;
     object-fit: contain;
     border-radius: 10%;
     outline: 3px solid grey;
+    margin-block-start: 98px;
+
+    /* NEW */
+    transition: all 0.3s ease-in-out;
 }
 
-.project-section img:hover {
+/* ========================= */
+/* HOVER EFFECT (DESKTOP) */
+/* ========================= */
+.project-section img:not(.github-icon):hover {
     cursor: pointer;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.7);
+    transform: scale(1.03);
 }
 
-
-.project-section {
-    text-align: center;
+/* ========================= */
+/* TOUCH EFFECT (MOBILE) */
+/* ========================= */
+.project-section img:not(.github-icon):active {
+    box-shadow: 0 0 25px rgba(0, 200, 0, 0.9);
+    transform: scale(0.97);
 }
 
+/* ========================= */
+/* TEXT STYLES */
+/* ========================= */
 .project-section h3 {
     font-weight: bold;
     font-size: 1.5rem;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
 .project-section p {
     color:grey;
-        font-weight: bold;
+    font-weight: bold;
     font-size: 1rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-
-
+/* ========================= */
+/* GITHUB ICON EFFECTS */
+/* ========================= */
 .github-icon {
     width:110px;
     height: 110px;
     object-fit: contain;
+
+    /* NEW */
+    transition: all 0.3s ease-in-out;
 }
 
+.github-icon:hover {
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.7);
+    border-radius: 50%;
+    transform: scale(1.1);
+}
 
+.github-icon:active {
+    box-shadow: 0 0 20px rgba(0, 200, 0, 0.9);
+    transform: scale(0.95);
+}
 
-
-
-
-
-
-
+/* ========================= */
+/* MOBILE */
+/* ========================= */
 @media screen and (max-width: 420px) {
 
     .experience-header-two  {
@@ -108,6 +122,7 @@
         width: 70%;
         text-align: center;
     }
+
     .project-section img:not(.github-icon) {
         width: 230px;
         height: 230px;
