@@ -9,31 +9,42 @@ import github from '../Images/github-icon.png'
 import Healthcare_Dashboard from '../Images/data-analytics-for-healthcare.png'
 import W from  '../Images/WAREHOUSEDASHBOARD.png'
 import Government_Operations from '../Images/Government_Operations.png'
+import Finance from '../Images/Finance & Fintech Data Analytics.png'
+
+
+
+
+
+function Finance_Data_Analytics_Project() {
+  window.location.href = 'https://github.com/jesusfaithandwordisinmyheartalways/FinanceDataAnalytics-/blob/master/README.md'
+}
 
 
 
 
 function Government_OperationsProject() {
-  window.location.href = 'https://github.com/jesusfaithandwordisinmyheartalways/DataAnalyticsGovernmentAuditErrorDetection'
+  window.location.href = 'https://github.com/jesusfaithandwordisinmyheartalways/DataAnalyticsGovernmentAuditErrorDetection/blob/master/README.md'
 }
 
 
 
 function SQLProject() {
-  window.location.href = 'https://github.com/jesusfaithandwordisinmyheartalways/SQLpythondataanalyst'
+  window.location.href = 'https://github.com/jesusfaithandwordisinmyheartalways/SQLpythondataanalyst/blob/main/README.md'
 }
 
 
 
 function HealthCare_Project() {
-  window.location.href = 'https://github.com/jesusfaithandwordisinmyheartalways/healthcaredataanalytics'
+  window.location.href = 'https://github.com/jesusfaithandwordisinmyheartalways/healthcaredataanalytics/blob/master/README.md'
 }
 
 
 
 function Data() {
-  window.location.href = 'https://github.com/jesusfaithandwordisinmyheartalways/datawarehouseanalytics'
+  window.location.href = 'https://github.com/jesusfaithandwordisinmyheartalways/datawarehouseanalytics/blob/master/README.md'
 }
+
+
 
 
 
@@ -58,6 +69,14 @@ const Experience = () => {
 
 
         <div className='project-section'>
+
+
+        <div><img src={Finance} onClick={Finance_Data_Analytics_Project} alt=''></img></div>
+            <div><h3>Finance & Fintech Data Analytics    </h3></div>
+            <div><p>Financial & Risk Analytics, Data Visualization & Reporting, Tableau, ETL & Data Pipelines, Business Communication </p></div>
+            <div> <img onClick={Finance_Data_Analytics_Project} className="github-icon" src={github} alt=''></img></div>
+
+         
 
 
         <div><img src={Government_Operations } onClick={Government_OperationsProject} alt=''></img></div>

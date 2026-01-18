@@ -23,26 +23,24 @@ const About = () => {
 
 
             <div className='para-about'>
-              <p>I am a results-driven Data Analyst with a Bachelor of Science in Information Technology (BSIT),
-               concentrated in Software Engineering, and hands-on experience across the full software development lifecycle.
-                During my 2025 internship at Next Play Nation, I served as both a Full-Stack Web Developer and Software Tester, 
-                working with multiple modern technologies, deploying applications to cloud platforms such as AWS,
-                 and ensuring high-quality functionality across client-side and server-side components for both web and mobile applications.
-                  My technical foundation includes strong proficiency in Python, SQL, and data visualization platforms like Tableau,
-                   which I leverage to transform complex information into clear, actionable insights. I am passionate about building data-driven solutions,
-                    optimizing performance, and supporting business decision-making with accuracy and clarity.
+              <p>I am a results-driven Data Analyst with a Bachelor of Science in Information Technology (BSIT) and a strong foundation in Python, SQL, R, 
+                and data visualization. Through advanced, portfolio-scale projects—including a Finance & Fintech Data Analytics system and a Large-Scale Government Audit & Error Detection platform—I
+                 have built end-to-end analytics pipelines that transform raw, complex data into decision-ready insights for operational monitoring, risk detection,
+                  and strategic planning. I specialize in data cleaning, validation, modeling, and visualization, and I am highly adaptable in applying industry best practices and tools 
+                  (such as Lovelytics or similar extensions) to ensure dashboards are polished, performant, and stakeholder-ready. With prior experience in software engineering and cloud-based application development, 
+                I bring a strong technical mindset, business awareness, and a commitment to continuous learning to every analytics challenge.
                 </p>
                 
                 <p>
-                  ◆ Skillful in gathering and analyzing requirements for data-intensive systems and delivering solutions that directly align with business and technical needs.
+                  ◆ 	•	End-to-end data analytics pipelines (Python, SQL, R) for finance, government, healthcare, and sales use cases
                   <br/>
-◆ Extensive experience in data modeling, querying, visualization, and analysis, showcased through multiple project builds.
+◆ Financial, risk, and anomaly analysis, including fraud detection and audit-focused insights
          <br/>
-◆ Self-motivated and diligent, continuously staying up to date with modern tools, technologies, and analytical methodologies.
+◆ Data visualization & storytelling using Tableau, Power BI, Excel (Power Query, pivot tables), and visualization best practices
            <br/>
-◆ Dynamic team player, experienced in collaborating across teams and managing multiple projects simultaneously.
+◆ Strong data cleaning, validation, and modeling skills with a focus on accuracy and decision support
            <br/>
-◆ Creative, analytical problem-solver, driven by passion and continuous improvement, consistently turning complex challenges into strategic, insight-driven outcomes.
+◆ Adaptable, collaborative, and continuously improving—quick to learn and apply new tools (e.g., Lovelytics) to meet professional reporting standards
                 </p>
             </div>
 
