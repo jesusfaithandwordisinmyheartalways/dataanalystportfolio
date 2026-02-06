@@ -1,71 +1,57 @@
-
-
-
-
 import React from 'react'
 import './About.css'
 import Graduation from '../Images/on campus.png'
 
-
-
 const About = () => {
   return (
     <>
-
-        <div className='about-container'>
-            <div className='about-wrapper'><h3>About Me</h3></div>
-
-            <div className='about-wrapper-two'>
-
-            <div>
-              <img src={Graduation} alt=''></img>
-            </div>
-
-
-            <div className='para-about'>
-              <p>I am a results-driven Data Analyst with a Bachelor of Science in Information Technology (BSIT) and a strong foundation in Python, SQL, R, 
-                and data visualization. Through advanced, portfolio-scale projects—including a Finance & Fintech Data Analytics system and a Large-Scale Government Audit & Error Detection platform—I
-                 have built end-to-end analytics pipelines that transform raw, complex data into decision-ready insights for operational monitoring, risk detection,
-                  and strategic planning. I specialize in data cleaning, validation, modeling, and visualization, and I am highly adaptable in applying industry best practices and tools 
-                  (such as Lovelytics or similar extensions) to ensure dashboards are polished, performant, and stakeholder-ready. With prior experience in software engineering and cloud-based application development, 
-                I bring a strong technical mindset, business awareness, and a commitment to continuous learning to every analytics challenge.
-                </p>
-                
-                <p>
-                  ◆ 	•	End-to-end data analytics pipelines (Python, SQL, R) for finance, government, healthcare, and sales use cases
-                  <br/>
-◆ Financial, risk, and anomaly analysis, including fraud detection and audit-focused insights
-         <br/>
-◆ Data visualization & storytelling using Tableau, Power BI, Excel (Power Query, pivot tables), and visualization best practices
-           <br/>
-◆ Strong data cleaning, validation, and modeling skills with a focus on accuracy and decision support
-           <br/>
-◆ Adaptable, collaborative, and continuously improving—quick to learn and apply new tools (e.g., Lovelytics) to meet professional reporting standards
-                </p>
-            </div>
-
-            </div>
-
-
-
-
-
-            <div className='domain-text'>
-                <div>
-                    <p>I am up for challenging opportunities in the domain of analytics. </p>
-                </div>
-            </div>
-
-
-
-
+      <div className='about-container'>
+        <div className='about-wrapper'>
+          <h3>About Me</h3>
         </div>
 
+        <div className='about-wrapper-two'>
+          <div>
+            <img src={Graduation} alt='Graduation' />
+          </div>
 
+          <div className='para-about'>
+            <p>
+              I am a <strong>Certified Data Analyst (Simplilearn)</strong> with a Bachelor of Science in Information Technology (Software Engineering) and a strong technical foundation in
+              Python, SQL, R, and data visualization. I specialize in transforming complex, raw datasets into clear, actionable insights that support business decision-making,
+              operational monitoring, and strategic planning.
+            </p>
 
+            <p>
+              Through advanced, portfolio-scale projects—including a <strong>Finance & Fintech Analytics System</strong> and a
+              <strong> Large-Scale Government Audit & Error Detection Platform</strong>—I have designed and implemented end-to-end analytics pipelines
+              covering data ingestion, cleaning, validation, modeling, analysis, and visualization. My work emphasizes accuracy, scalability, and stakeholder-ready reporting.
+            </p>
 
+            <p>
+              With prior experience in software engineering and cloud-based application development, I bring a systems-level understanding of data workflows,
+              APIs, and automation. This background allows me to collaborate effectively with data engineers, optimize data quality, and deliver reliable analytics solutions.
+              I am highly adaptable and continuously learning, quickly applying industry best practices and tools (such as Lovelytics and similar extensions)
+              to ensure dashboards are polished, performant, and professional.
+            </p>
 
+            <p>
+              <strong>Core competencies:</strong><br />
+              • End-to-end data analytics pipelines using Python, SQL, and R across finance, government, healthcare, and sales domains<br />
+              • Financial, risk, audit, and anomaly analysis, including fraud detection and error identification<br />
+              • Data visualization and storytelling with Tableau, Power BI, and Excel (Power Query, pivot tables)<br />
+              • Data cleaning, validation, and modeling with a strong focus on accuracy and decision support<br />
+              • Collaborative, adaptable, and continuously improving—quick to learn and apply new analytics tools and standards
+            </p>
+          </div>
+        </div>
 
+        <div className='domain-text'>
+          <div>
+            <p>I am open to challenging opportunities in data analytics where I can deliver measurable impact and continue growing professionally.</p>
+          </div>
+        </div>
+      </div>
     </>
   )
 }

@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import './Navbar.css'
 
+
+
 function ResumeDownload() {
   window.open('/resume.pdf', '_blank');
 }
@@ -9,6 +11,14 @@ function ResumeDownload() {
 function CoverLetterDownload() {
   window.open('/coverletter.pdf', '_blank');
 }
+
+
+
+function CertificationDownload() {
+  window.open('/certification.pdf', '_blank');
+}
+
+
 
 
 const Navbar = () => {
@@ -24,6 +34,9 @@ const Navbar = () => {
     e.preventDefault();
     document.querySelector(target).scrollIntoView({ behavior: 'smooth' });
   };
+
+
+
 
   return (
     <>
@@ -47,6 +60,8 @@ const Navbar = () => {
             <a href="#contact" onClick={(e)=>smoothScroll(e,'#contact')}>Contact</a>
             <a onClick={ResumeDownload} style={{ cursor: "pointer" }}>Résumé</a>
             <a onClick={CoverLetterDownload} style={{ cursor: "pointer" }}>Cover Letter</a>
+            <a onClick={CertificationDownload} style={{ cursor: "pointer" }}>Certification</a>
+
 
           </div>
 
