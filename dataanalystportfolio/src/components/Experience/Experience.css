@@ -111,6 +111,50 @@
     transform: scale(0.95);
 }
 
+
+
+
+
+
+.data-warehouse-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:0 auto;
+    gap:45px
+}
+
+
+.data-warehouse-wrapper img {
+    width: 40px;
+    object-fit: contain;
+}
+
+
+
+
+
+
+.heathcare-warehouse-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:0 auto;
+    gap:45px
+}
+
+
+.heathcare-warehouse-wrapper img {
+
+    width: 40px;
+    object-fit: contain;    
+}
+
+
+
+
+
+
 /* ========================= */
 /* MOBILE */
 /* ========================= */

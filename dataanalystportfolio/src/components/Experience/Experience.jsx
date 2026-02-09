@@ -6,17 +6,19 @@ import React from 'react'
 import './Experience.css'
 import SQLPythonDataAnalystProject from '../Images/SQLPythonDataAnalystProject.png'
 import github from '../Images/github-icon.png'
-import Healthcare_Dashboard from '../Images/data-analytics-for-healthcare.png'
 import W from  '../Images/WAREHOUSEDASHBOARD.png'
 import Government_Operations from '../Images/Government_Operations.png'
 import Finance from '../Images/Finance & Fintech Data Analytics.png'
+import Dashboard from '../Images/Dashboard.png'
+import Healthcare_Dashboard from '../Images/data-analytics-for-healthcare.png'
+import Healthcare from '../Images/Healthcare Billing & Visit Analysis.png'
 
 
 
 
 
 function Finance_Data_Analytics_Project() {
-  window.location.href = 'https://github.com/jesusfaithandwordisinmyheartalways/FinanceDataAnalytics-/blob/master/README.md'
+  window.location.href = 'https://github.com/jesusfaithandwordisinmyheartalways/DataAnalyticsFnance-Fintech'
 }
 
 
@@ -35,16 +37,28 @@ function SQLProject() {
 
 
 function HealthCare_Project() {
-  window.location.href = 'https://github.com/jesusfaithandwordisinmyheartalways/healthcaredataanalytics/blob/master/README.md'
+  window.location.href = 'https://github.com/jesusfaithandwordisinmyheartalways/healthcaredataanalytics/blob/master/README.md%20'
 }
 
 
 
-function Data() {
+function WarehouseDataGuthub() {
   window.location.href = 'https://github.com/jesusfaithandwordisinmyheartalways/datawarehouseanalytics/blob/master/README.md'
 }
 
 
+
+function WarehouseData() {
+  window.location.href = 'https://public.tableau.com/app/profile/andrew.johnson8782/viz/DatawarehouseGlobalAnalysis/Dashboard?publish=yes'
+}
+
+
+
+
+
+function HealthcareBilling() {
+  window.location.href = 'https://public.tableau.com/app/profile/andrew.johnson8782/viz/HealthcareBillingVisitAnalysis/Dashboard1?publish=yes'
+}
 
 
 
@@ -86,17 +100,27 @@ const Experience = () => {
 
          
 
-             <div><img src={Healthcare_Dashboard} onClick={HealthCare_Project} alt=''></img></div>
+
+            <div className='heathcare-warehouse-wrapper'>
+                <div><img src={Healthcare_Dashboard} onClick={HealthcareBilling} alt=''></img></div>
+                <div><img src={Healthcare} onClick={HealthcareBilling} alt=''></img></div>
+              </div>
+
             <div><h3>Healthcare Data Analytics: Billing, Visits & Outcomes   </h3></div>
             <div><p>SQL, Python , 	NumPy & openpyxl  library, Tableau , Jupyter Notebook, PostgreSQL + pgAdmin , Excel  </p></div>
             <div> <img onClick={HealthCare_Project} className="github-icon" src={github} alt=''></img></div>
 
 
 
-             <div><img src={W} onClick={Data} alt=''></img></div>
+
+
+              <div className='data-warehouse-wrapper'>
+                <div><img src={W} onClick={WarehouseData} alt=''></img></div>
+                 <div><img onClick={WarehouseData} src={Dashboard} alt=''></img></div>
+              </div>
             <div><h3>DataWarehouseAnalytics: Sales Data Warehouse & Dashboards </h3></div>
             <div><p>Mini Data Warehouse in PostgreSQL Python , R, Interactive dashboards in Tableau and Power BI, baseline machine learning  </p></div>
-            <div> <img onClick={Data} className="github-icon" src={github} alt=''></img></div>
+            <div> <img onClick={WarehouseDataGuthub} className="github-icon" src={github} alt=''></img></div>
 
 
 
