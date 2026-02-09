@@ -12,14 +12,20 @@ import Finance from '../Images/Finance & Fintech Data Analytics.png'
 import Dashboard from '../Images/Dashboard.png'
 import Healthcare_Dashboard from '../Images/data-analytics-for-healthcare.png'
 import Healthcare from '../Images/Healthcare Billing & Visit Analysis.png'
-
+import FinancialDashboard from '../Images/FinancialDashboard.png'
 
 
 
 
 function Finance_Data_Analytics_Project() {
-  window.location.href = 'https://github.com/jesusfaithandwordisinmyheartalways/DataAnalyticsFnance-Fintech'
+  window.location.href = 'https://github.com/jesusfaithandwordisinmyheartalways/FinancialFintechAnalytics/blob/main/README.md'
 }
+
+
+function Finance_Data() {
+  window.location.href = 'https://public.tableau.com/app/profile/andrew.johnson8782/viz/FinancialFintechAnalyticsDashboard/Dashboard1?publish=yes'
+}
+
 
 
 
@@ -85,7 +91,13 @@ const Experience = () => {
         <div className='project-section'>
 
 
-        <div><img src={Finance} onClick={Finance_Data_Analytics_Project} alt=''></img></div>
+
+        <div className='heathcare-warehouse-wrapper'>
+                 <div><img src={Finance} onClick={Finance_Data}  alt=''></img></div>
+                <div><img src={FinancialDashboard} onClick={Finance_Data} alt=''></img></div>
+              </div>
+
+
             <div><h3>Finance & Fintech Data Analytics    </h3></div>
             <div><p>Financial & Risk Analytics, Data Visualization & Reporting, Tableau, ETL & Data Pipelines, Business Communication </p></div>
             <div> <img onClick={Finance_Data_Analytics_Project} className="github-icon" src={github} alt=''></img></div>
