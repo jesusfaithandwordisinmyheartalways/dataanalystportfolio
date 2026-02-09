@@ -23,7 +23,7 @@ function Finance_Data_Analytics_Project() {
 
 
 function Finance_Data() {
-  window.location.href = 'https://public.tableau.com/app/profile/andrew.johnson8782/viz/FinancialFintechAnalyticsDashboard/Dashboard1?publish=yes'
+  window.location.href = 'https://public.tableau.com/app/profile/andrew.johnson8782/viz/FinancialFintechAnalyticsDashboard/FinancialFintechAnalyticsDashboard?publish=yes'
 }
 
 
