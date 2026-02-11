@@ -9,10 +9,12 @@ import github from '../Images/github-icon.png'
 import W from  '../Images/WAREHOUSEDASHBOARD.png'
 import Government_Operations from '../Images/Government_Operations.png'
 import Finance from '../Images/Finance & Fintech Data Analytics.png'
-import Dashboard from '../Images/Dashboard.png'
+import Dashboard from '../Images/Dashboardwarehouse.png'
 import Healthcare_Dashboard from '../Images/data-analytics-for-healthcare.png'
 import Healthcare from '../Images/Healthcare Billing & Visit Analysis.png'
 import FinancialDashboard from '../Images/FinancialDashboard.png'
+import Government_Dashboard from '../Images/GovernmentDashboard.png'
+
 
 
 
@@ -33,6 +35,18 @@ function Finance_Data() {
 function Government_OperationsProject() {
   window.location.href = 'https://github.com/jesusfaithandwordisinmyheartalways/DataAnalyticsGovernmentAuditErrorDetection/blob/master/README.md'
 }
+
+
+
+function Government_Data() {
+  window.location.href = 'https://public.tableau.com/app/profile/andrew.johnson8782/viz/GovernmentOperationsAuditErrorOperationDashboard/GovernmentOperationsAuditErrorOperationDashboard?publish=yes'
+}
+
+
+
+
+
+
 
 
 
@@ -105,12 +119,22 @@ const Experience = () => {
          
 
 
-        <div><img src={Government_Operations } onClick={Government_OperationsProject} alt=''></img></div>
+
+            <div className='heathcare-warehouse-wrapper'>
+            <div><img src={Government_Operations } onClick={Government_Data} alt=''></img></div>
+            <div><img src={Government_Dashboard} onClick={Government_Data} alt=''></img></div>
+
+              </div>
+
+
             <div><h3>Large-Scale Audit & Error Detection System for Government Operations  </h3></div>
             <div><p>Python, SQL, R, Tableau Public </p></div>
             <div> <img onClick={Government_OperationsProject} className="github-icon" src={github} alt=''></img></div>
 
          
+
+
+
 
 
             <div className='heathcare-warehouse-wrapper'>
