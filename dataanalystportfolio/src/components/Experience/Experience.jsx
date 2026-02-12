@@ -115,7 +115,25 @@ const Experience = () => {
             <div><h3>Finance & Fintech Data Analytics    </h3></div>
             <div><p>Financial & Risk Analytics, Data Visualization & Reporting, Tableau, ETL & Data Pipelines, Business Communication </p></div>
             <div> <img onClick={Finance_Data_Analytics_Project} className="github-icon" src={github} alt=''></img></div>
+            
+            <div className="github-sql-link-wrapper">
+  <a
+    href="https://github.com/jesusfaithandwordisinmyheartalways/FinancialFintechAnalytics/blob/main/sql_files/financial_data_values.sql"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Download Full Financial SQL File
+  </a>
 
+  <a
+    href="https://github.com/jesusfaithandwordisinmyheartalways/FinancialFintechAnalytics/blob/main/sql_files/combined_financial_data_analysis.sql"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Download Combined Financial Data Analysis SQL File
+  </a>
+</div>
+            
          
 
 
