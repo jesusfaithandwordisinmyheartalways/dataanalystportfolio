@@ -130,7 +130,7 @@ const Experience = () => {
     target="_blank"
     rel="noopener noreferrer"
   >
-    Download Combined Financial Data Analysis SQL File
+     Combined Financial Data Analysis SQL File
   </a>
 </div>
             
