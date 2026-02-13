@@ -166,6 +166,13 @@ const Experience = () => {
             <div><p>SQL, Python , 	NumPy & openpyxl  library, Tableau , Jupyter Notebook, PostgreSQL + pgAdmin , Excel  </p></div>
             <div> <img onClick={HealthCare_Project} className="github-icon" src={github} alt=''></img></div>
 
+            <div className="github-sql-link-wrapper">
+
+  <a href="https://github.com/jesusfaithandwordisinmyheartalways/healthcaredataanalytics/blob/master/sql/combined_healthcare_data.sql" target="_blank"
+      rel="noopener noreferrer" > Combined HeathCare Data Analysis SQL File </a>
+  </div>
+          
+
 
 
 
