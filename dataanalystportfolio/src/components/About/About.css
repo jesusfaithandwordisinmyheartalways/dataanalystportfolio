@@ -7,7 +7,7 @@
     overflow: hidden;
     background: white;
     margin:0;
-    height:110vh;
+    height:130vh;
     padding: 0.3em;
 
 }
@@ -70,7 +70,7 @@
     margin:0 auto;
     max-width: 1000px;
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1rem;
     color:black;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 

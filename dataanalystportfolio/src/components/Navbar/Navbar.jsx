@@ -19,6 +19,12 @@ function CertificationDownload() {
 }
 
 
+function GoogleCertificationDownload() {
+  window.open('/certification_two.pdf', '_blank');
+}
+
+
+
 
 
 const Navbar = () => {
@@ -60,7 +66,8 @@ const Navbar = () => {
             <a href="#contact" onClick={(e)=>smoothScroll(e,'#contact')}>Contact</a>
             <a onClick={ResumeDownload} style={{ cursor: "pointer" }}>Résumé</a>
             <a onClick={CoverLetterDownload} style={{ cursor: "pointer" }}>Cover Letter</a>
-            <a onClick={CertificationDownload} style={{ cursor: "pointer" }}>Certification</a>
+            <a onClick={GoogleCertificationDownload} style={{ cursor: "pointer" }}>Google Analytics Cert</a>
+            <a onClick={CertificationDownload} style={{ cursor: "pointer" }}>Data Analytics Cert</a>
 
 
           </div>

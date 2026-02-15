@@ -25,7 +25,7 @@
 .nav-wrapper a {
     text-decoration: none;
     color: white;
-    font-size: 18px;
+    font-size: 1rem;
 }
 
 .nav-wrapper a:hover {
